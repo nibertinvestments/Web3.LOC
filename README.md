@@ -582,3 +582,5 @@ Use a real `.env` file (never committed) for API keys and credentials. This repo
 ---
 
 Original scope (Web3 contract library) remains; pipeline lives alongside and can help identify smart-contract tooling gaps.
+#   F o r c e   d e p l o y m e n t   t r i g g e r  
+ 
