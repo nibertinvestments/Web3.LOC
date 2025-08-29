@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3.LOC - Smart Contract Discovery Platform</title>
+    <meta name="description" content="Discover, analyze, and download smart contracts from Ethereum and Base networks">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js for analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                        darker: '#111827'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'spin-slow': 'spin 3s linear infinite'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 min-h-screen text-white">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-50 backdrop-blur-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                            <i class="fas fa-search mr-2"></i>Web3.LOC
+                        </h1>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#dashboard" class="nav-link active" data-tab="dashboard">
+                                <i class="fas fa-chart-line mr-1"></i>Dashboard
+                            </a>
+                            <a href="#discovery" class="nav-link" data-tab="discovery">
+                                <i class="fas fa-search-plus mr-1"></i>Discovery
+                            </a>
+                            <a href="#search" class="nav-link" data-tab="search">
+                                <i class="fas fa-filter mr-1"></i>Search
+                            </a>
+                            <a href="#analytics" class="nav-link" data-tab="analytics">
+                                <i class="fas fa-chart-pie mr-1"></i>Analytics
+                            </a>
+                            <a href="#export" class="nav-link" data-tab="export">
+                                <i class="fas fa-download mr-1"></i>Export
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div id="connection-status" class="flex items-center">
+                        <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse mr-2"></div>
+                        <span class="text-sm">Connecting...</span>
+                    </div>
+                    <button id="settings-btn" class="text-white hover:text-blue-400 transition-colors">
+                        <i class="fas fa-cog text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <!-- Header -->
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold mb-4">Contract Discovery Dashboard</h2>
+                    <p class="text-xl text-gray-300">Real-time blockchain contract analysis across Ethereum and Base networks</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Total Contracts</p>
+                                <p id="total-contracts" class="text-2xl font-bold">0</p>
+                            </div>
+                            <i class="fas fa-file-contract text-3xl text-blue-400"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Ethereum Contracts</p>
+                                <p id="ethereum-contracts" class="text-2xl font-bold">0</p>
+                            </div>
+                            <i class="fab fa-ethereum text-3xl text-purple-400"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Base Contracts</p>
+                                <p id="base-contracts" class="text-2xl font-bold">0</p>
+                            </div>
+                            <i class="fas fa-layer-group text-3xl text-green-400"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Last Updated</p>
+                                <p id="last-updated" class="text-sm font-medium">Never</p>
+                            </div>
+                            <i class="fas fa-clock text-3xl text-yellow-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <div class="chart-container" data-aos="fade-right" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold mb-4">Contract Distribution</h3>
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                    <div class="chart-container" data-aos="fade-left" data-aos-delay="300">
+                        <h3 class="text-xl font-semibold mb-4">Discovery Timeline</h3>
+                        <canvas id="timelineChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Contracts -->
+                <div class="chart-container" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold mb-4">Recent Discoveries</h3>
+                    <div id="recent-contracts" class="space-y-4">
+                        <!-- Recent contracts will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discovery Tab -->
+        <div id="discovery" class="tab-content">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="text-center mb-8" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-4">Contract Discovery</h2>
+                    <p class="text-gray-300">Discover and analyze smart contracts across blockchain networks</p>
+                </div>
+
+                <div class="discovery-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-2">Select Network</label>
+                        <select id="network-select" class="form-select">
+                            <option value="ethereum">Ethereum Mainnet</option>
+                            <option value="base">Base Network</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-2">Contract Address</label>
+                        <div class="flex">
+                            <input type="text" 
+                                   id="contract-address" 
+                                   placeholder="0x..." 
+                                   class="form-input flex-1">
+                            <button id="discover-btn" class="btn-primary ml-3">
+                                <i class="fas fa-search mr-2"></i>Discover
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="discovery-results" class="hidden">
+                        <!-- Discovery results will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Tab -->
+        <div id="search" class="tab-content">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="text-center mb-8" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-4">Contract Search</h2>
+                    <p class="text-gray-300">Search through discovered contracts with advanced filters</p>
+                </div>
+
+                <!-- Search Filters -->
+                <div class="search-container mb-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Search Term</label>
+                            <input type="text" id="search-term" placeholder="Contract name, address, or function..." class="form-input">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Network</label>
+                            <select id="search-network" class="form-select">
+                                <option value="">All Networks</option>
+                                <option value="ethereum">Ethereum</option>
+                                <option value="base">Base</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Verification Status</label>
+                            <select id="search-verified" class="form-select">
+                                <option value="">All Contracts</option>
+                                <option value="true">Verified Only</option>
+                                <option value="false">Unverified Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="search-btn" class="btn-primary">
+                        <i class="fas fa-search mr-2"></i>Search Contracts
+                    </button>
+                </div>
+
+                <!-- Search Results -->
+                <div id="search-results" class="space-y-4">
+                    <!-- Search results will appear here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Analytics Tab -->
+        <div id="analytics" class="tab-content">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="text-center mb-8" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-4">Contract Analytics</h2>
+                    <p class="text-gray-300">Deep insights into contract patterns and trends</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="chart-container" data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-4">Compiler Versions</h3>
+                        <canvas id="compilerChart"></canvas>
+                    </div>
+                    <div class="chart-container" data-aos="fade-left">
+                        <h3 class="text-xl font-semibold mb-4">Optimization Rates</h3>
+                        <canvas id="optimizationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Export Tab -->
+        <div id="export" class="tab-content">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="text-center mb-8" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-4">Export Data</h2>
+                    <p class="text-gray-300">Download contract data in various formats</p>
+                </div>
+
+                <div class="export-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="export-option">
+                            <i class="fas fa-file-csv text-4xl text-green-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">CSV Export</h3>
+                            <p class="text-gray-300 mb-4">Export all contract data to CSV format</p>
+                            <button id="export-csv" class="btn-secondary">
+                                <i class="fas fa-download mr-2"></i>Download CSV
+                            </button>
+                        </div>
+                        <div class="export-option">
+                            <i class="fas fa-file-code text-4xl text-blue-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">JSON Export</h3>
+                            <p class="text-gray-300 mb-4">Export all contract data to JSON format</p>
+                            <button id="export-json" class="btn-secondary">
+                                <i class="fas fa-download mr-2"></i>Download JSON
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Settings</h3>
+                <button id="close-settings" class="text-gray-400 hover:text-white">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <div class="space-y-6">
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">API Configuration</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Etherscan API Key</label>
+                            <input type="password" id="etherscan-key" placeholder="Enter your Etherscan API key" class="form-input">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Basescan API Key</label>
+                            <input type="password" id="basescan-key" placeholder="Enter your Basescan API key" class="form-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Storage Configuration</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">GitHub Repository</label>
+                            <input type="text" id="github-repo" placeholder="username/repository-name" class="form-input">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">GitHub Token</label>
+                            <input type="password" id="github-token" placeholder="Enter your GitHub token" class="form-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end space-x-4">
+                    <button id="test-connection" class="btn-secondary">
+                        <i class="fas fa-plug mr-2"></i>Test Connection
+                    </button>
+                    <button id="save-settings" class="btn-primary">
+                        <i class="fas fa-save mr-2"></i>Save Settings
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p class="mt-4">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/github-storage.js"></script>
+    <script src="js/blockchain-api.js"></script>
+    <script src="js/contract-analyzer.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

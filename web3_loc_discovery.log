@@ -1,0 +1,297 @@
+2025-08-24 15:39:55,944 - contract_discovery.blockchain_clients - INFO - Initialized ethereum client
+2025-08-24 15:39:57,006 - contract_discovery.blockchain_clients - WARNING - API error for polygon: NOTOK
+2025-08-24 15:39:57,007 - contract_discovery.blockchain_clients - WARNING - Failed to connect to polygon API
+2025-08-24 15:39:57,684 - contract_discovery.blockchain_clients - WARNING - API error for arbitrum: NOTOK
+2025-08-24 15:39:57,685 - contract_discovery.blockchain_clients - WARNING - Failed to connect to arbitrum API
+2025-08-24 15:39:58,489 - contract_discovery.blockchain_clients - WARNING - API error for optimism: NOTOK
+2025-08-24 15:39:58,491 - contract_discovery.blockchain_clients - WARNING - Failed to connect to optimism API
+2025-08-24 15:39:59,772 - contract_discovery.blockchain_clients - INFO - Initialized avalanche client
+2025-08-24 15:39:59,887 - contract_discovery.blockchain_clients - ERROR - Request error for fantom: Cannot connect to host api.ftmscan.com:443 ssl:default [getaddrinfo failed]
+2025-08-24 15:39:59,888 - contract_discovery.blockchain_clients - WARNING - Failed to connect to fantom API
+2025-08-24 15:39:59,888 - contract_discovery.blockchain_clients - INFO - Initialized 2 blockchain clients
+2025-08-24 15:40:11,100 - contract_discovery.github_storage - INFO - Loaded vault index with 50 contracts
+2025-08-24 15:40:11,103 - contract_discovery.github_storage - INFO - GitHub storage vault initialized successfully
+2025-08-24 15:40:11,105 - contract_discovery.enhanced_contract_analyzer - INFO - Enhanced contract analyzer initialized with GitHub storage vault
+2025-08-24 15:40:41,574 - contract_discovery.github_storage - INFO - Loaded vault index with 50 contracts
+2025-08-24 15:40:41,576 - contract_discovery.github_storage - INFO - GitHub storage vault initialized successfully
+2025-08-24 15:40:41,577 - contract_discovery.enhanced_contract_analyzer - INFO - Enhanced contract analyzer initialized with GitHub storage vault
+2025-08-24 15:40:51,893 - contract_discovery.github_storage - INFO - Loaded vault index with 50 contracts
+2025-08-24 15:40:51,895 - contract_discovery.github_storage - INFO - GitHub storage vault initialized successfully
+2025-08-24 15:40:51,896 - contract_discovery.main_discovery - INFO - Main contract discovery system initialized
+2025-08-24 15:40:51,896 - contract_discovery.main_discovery - INFO - Starting comprehensive repository analysis: https://github.com/OpenZeppelin/openzeppelin-contracts
+2025-08-24 15:40:52,693 - contract_discovery.main_discovery - INFO - Repository default branch: master
+2025-08-24 15:40:53,329 - contract_discovery.main_discovery - INFO - Filtered to 696 contract files from 965 total files
+2025-08-24 15:40:53,330 - contract_discovery.main_discovery - INFO - Found 696 files to analyze
+2025-08-24 15:40:53,330 - contract_discovery.main_discovery - INFO - Analyzing file 1/696: .mocharc.js
+2025-08-24 15:40:53,918 - contract_discovery.main_discovery - INFO - Analyzing file 2/696: .solcover.js
+2025-08-24 15:40:54,468 - contract_discovery.main_discovery - INFO - Analyzing file 3/696: certora/harnesses/AccessControlDefaultAdminRulesHarness.sol
+2025-08-24 15:40:55,126 - contract_discovery.main_discovery - INFO -   Found contract: AccessControlDefaultAdminRulesHarness
+2025-08-24 15:41:37,416 - contract_discovery.github_storage - INFO - Loaded 48 contract signatures from vault
+2025-08-24 15:41:37,418 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessControlDefaultAdminRulesHarness
+2025-08-24 15:41:37,418 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessControlDefaultAdminRulesHarness
+2025-08-24 15:41:37,520 - contract_discovery.main_discovery - INFO - Analyzing file 4/696: certora/harnesses/AccessControlHarness.sol
+2025-08-24 15:41:38,101 - contract_discovery.main_discovery - INFO -   Found contract: AccessControlHarness
+2025-08-24 15:41:38,102 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessControlHarness
+2025-08-24 15:41:38,102 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessControlHarness
+2025-08-24 15:41:38,204 - contract_discovery.main_discovery - INFO - Analyzing file 5/696: certora/harnesses/AccessManagedHarness.sol
+2025-08-24 15:41:38,867 - contract_discovery.main_discovery - INFO -   Found contract: AccessManagedHarness
+2025-08-24 15:41:38,871 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessManagedHarness
+2025-08-24 15:41:38,872 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessManagedHarness
+2025-08-24 15:41:38,986 - contract_discovery.main_discovery - INFO - Analyzing file 6/696: certora/harnesses/AccessManagerHarness.sol
+2025-08-24 15:41:39,410 - contract_discovery.main_discovery - INFO -   Found contract: AccessManagerHarness
+2025-08-24 15:41:39,416 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessManagerHarness
+2025-08-24 15:41:39,416 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessManagerHarness
+2025-08-24 15:41:39,520 - contract_discovery.main_discovery - INFO - Analyzing file 7/696: certora/harnesses/AccountHarness.sol
+2025-08-24 15:41:40,338 - contract_discovery.main_discovery - INFO -   Found contract: AccountHarness
+2025-08-24 15:41:40,340 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccountHarness
+2025-08-24 15:41:40,340 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccountHarness
+2025-08-24 15:41:40,452 - contract_discovery.main_discovery - INFO - Analyzing file 8/696: certora/harnesses/DoubleEndedQueueHarness.sol
+2025-08-24 15:41:41,046 - contract_discovery.main_discovery - INFO -   Found contract: DoubleEndedQueueHarness
+2025-08-24 15:41:41,048 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: DoubleEndedQueueHarness
+2025-08-24 15:41:41,049 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: DoubleEndedQueueHarness
+2025-08-24 15:41:41,153 - contract_discovery.main_discovery - INFO - Analyzing file 9/696: certora/harnesses/ERC20FlashMintHarness.sol
+2025-08-24 15:41:41,732 - contract_discovery.main_discovery - INFO -   Found contract: ERC20FlashMintHarness
+2025-08-24 15:41:41,734 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC20FlashMintHarness
+2025-08-24 15:41:41,735 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC20FlashMintHarness
+2025-08-24 15:41:41,851 - contract_discovery.main_discovery - INFO - Analyzing file 10/696: certora/harnesses/ERC20PermitHarness.sol
+2025-08-24 15:41:42,377 - contract_discovery.main_discovery - INFO -   Found contract: ERC20PermitHarness
+2025-08-24 15:41:42,378 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC20PermitHarness
+2025-08-24 15:41:42,379 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC20PermitHarness
+2025-08-24 15:41:42,485 - contract_discovery.main_discovery - INFO - Analyzing file 11/696: certora/harnesses/ERC20WrapperHarness.sol
+2025-08-24 15:41:43,055 - contract_discovery.main_discovery - INFO -   Found contract: ERC20WrapperHarness
+2025-08-24 15:41:43,057 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC20WrapperHarness
+2025-08-24 15:41:43,057 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC20WrapperHarness
+2025-08-24 15:41:43,168 - contract_discovery.main_discovery - INFO - Analyzing file 12/696: certora/harnesses/ERC3156FlashBorrowerHarness.sol
+2025-08-24 15:41:43,645 - contract_discovery.main_discovery - INFO -   Found contract: ERC3156FlashBorrowerHarness
+2025-08-24 15:41:43,647 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC3156FlashBorrowerHarness
+2025-08-24 15:41:43,647 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC3156FlashBorrowerHarness
+2025-08-24 15:41:43,752 - contract_discovery.main_discovery - INFO - Analyzing file 13/696: certora/harnesses/ERC721Harness.sol
+2025-08-24 15:41:44,489 - contract_discovery.main_discovery - INFO -   Found contract: ERC721Harness
+2025-08-24 15:41:44,491 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC721Harness
+2025-08-24 15:41:44,491 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC721Harness
+2025-08-24 15:41:44,600 - contract_discovery.main_discovery - INFO - Analyzing file 14/696: certora/harnesses/ERC721ReceiverHarness.sol
+2025-08-24 15:41:45,516 - contract_discovery.main_discovery - INFO -   Found contract: ERC721ReceiverHarness
+2025-08-24 15:41:45,517 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC721ReceiverHarness
+2025-08-24 15:41:45,517 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC721ReceiverHarness
+2025-08-24 15:41:45,618 - contract_discovery.main_discovery - INFO - Analyzing file 15/696: certora/harnesses/EnumerableMapHarness.sol
+2025-08-24 15:41:46,563 - contract_discovery.main_discovery - INFO -   Found contract: EnumerableMapHarness
+2025-08-24 15:41:46,566 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: EnumerableMapHarness
+2025-08-24 15:41:46,566 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: EnumerableMapHarness
+2025-08-24 15:41:46,668 - contract_discovery.main_discovery - INFO - Analyzing file 16/696: certora/harnesses/EnumerableSetHarness.sol
+2025-08-24 15:41:47,366 - contract_discovery.main_discovery - INFO -   Found contract: EnumerableSetHarness
+2025-08-24 15:41:47,368 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: EnumerableSetHarness
+2025-08-24 15:41:47,368 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: EnumerableSetHarness
+2025-08-24 15:41:47,485 - contract_discovery.main_discovery - INFO - Analyzing file 17/696: certora/harnesses/InitializableHarness.sol
+2025-08-24 15:41:48,277 - contract_discovery.main_discovery - INFO -   Found contract: InitializableHarness
+2025-08-24 15:41:48,279 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: InitializableHarness
+2025-08-24 15:41:48,280 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: InitializableHarness
+2025-08-24 15:41:48,383 - contract_discovery.main_discovery - INFO - Analyzing file 18/696: certora/harnesses/NoncesHarness.sol
+2025-08-24 15:41:49,086 - contract_discovery.main_discovery - INFO -   Found contract: NoncesHarness
+2025-08-24 15:41:49,087 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: NoncesHarness
+2025-08-24 15:41:49,087 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: NoncesHarness
+2025-08-24 15:41:49,199 - contract_discovery.main_discovery - INFO - Analyzing file 19/696: certora/harnesses/Ownable2StepHarness.sol
+2025-08-24 15:41:49,935 - contract_discovery.main_discovery - INFO -   Found contract: Ownable2StepHarness
+2025-08-24 15:41:49,936 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: Ownable2StepHarness
+2025-08-24 15:41:49,937 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: Ownable2StepHarness
+2025-08-24 15:41:50,046 - contract_discovery.main_discovery - INFO - Analyzing file 20/696: certora/harnesses/OwnableHarness.sol
+2025-08-24 15:41:50,692 - contract_discovery.main_discovery - INFO -   Found contract: OwnableHarness
+2025-08-24 15:41:50,694 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: OwnableHarness
+2025-08-24 15:41:50,694 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: OwnableHarness
+2025-08-24 15:41:50,800 - contract_discovery.main_discovery - INFO - Analyzing file 21/696: certora/harnesses/PausableHarness.sol
+2025-08-24 15:41:51,367 - contract_discovery.main_discovery - INFO -   Found contract: PausableHarness
+2025-08-24 15:41:51,368 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: PausableHarness
+2025-08-24 15:41:51,369 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: PausableHarness
+2025-08-24 15:41:51,482 - contract_discovery.main_discovery - INFO - Analyzing file 22/696: certora/harnesses/TimelockControllerHarness.sol
+2025-08-24 15:41:52,173 - contract_discovery.main_discovery - INFO -   Found contract: TimelockControllerHarness
+2025-08-24 15:41:52,174 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: TimelockControllerHarness
+2025-08-24 15:41:52,175 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: TimelockControllerHarness
+2025-08-24 15:41:52,282 - contract_discovery.main_discovery - INFO - Analyzing file 23/696: certora/run.js
+2025-08-24 15:41:52,960 - contract_discovery.main_discovery - INFO - Analyzing file 24/696: contracts/access
+2025-08-24 15:41:53,677 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/access
+2025-08-24 15:41:53,678 - contract_discovery.main_discovery - INFO - Analyzing file 25/696: contracts/access/AccessControl.sol
+2025-08-24 15:41:54,250 - contract_discovery.main_discovery - INFO -   Found contract: AccessControl
+2025-08-24 15:41:54,255 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessControl
+2025-08-24 15:41:54,255 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessControl
+2025-08-24 15:41:54,364 - contract_discovery.main_discovery - INFO - Analyzing file 26/696: contracts/access/IAccessControl.sol
+2025-08-24 15:41:55,013 - contract_discovery.main_discovery - INFO -   Found contract: IAccessControl
+2025-08-24 15:41:55,015 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IAccessControl
+2025-08-24 15:41:55,016 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IAccessControl
+2025-08-24 15:41:55,131 - contract_discovery.main_discovery - INFO - Analyzing file 27/696: contracts/access/Ownable.sol
+2025-08-24 15:41:55,691 - contract_discovery.main_discovery - INFO -   Found contract: Ownable
+2025-08-24 15:41:55,693 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: Ownable
+2025-08-24 15:41:55,693 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: Ownable
+2025-08-24 15:41:55,798 - contract_discovery.main_discovery - INFO - Analyzing file 28/696: contracts/access/Ownable2Step.sol
+2025-08-24 15:41:56,517 - contract_discovery.main_discovery - INFO -   Found contract: Ownable2Step
+2025-08-24 15:41:56,518 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: Ownable2Step
+2025-08-24 15:41:56,519 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: Ownable2Step
+2025-08-24 15:41:56,631 - contract_discovery.main_discovery - INFO - Analyzing file 29/696: contracts/access/README.adoc
+2025-08-24 15:41:57,165 - contract_discovery.main_discovery - INFO -   Found contract: README
+2025-08-24 15:41:57,168 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: README
+2025-08-24 15:41:57,168 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: README
+2025-08-24 15:41:57,280 - contract_discovery.main_discovery - INFO - Analyzing file 30/696: contracts/access/extensions
+2025-08-24 15:41:58,008 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/access/extensions
+2025-08-24 15:41:58,008 - contract_discovery.main_discovery - INFO - Analyzing file 31/696: contracts/access/extensions/AccessControlDefaultAdminRules.sol
+2025-08-24 15:41:58,693 - contract_discovery.main_discovery - INFO -   Found contract: MyToken
+2025-08-24 15:41:58,693 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: MyToken
+2025-08-24 15:41:58,694 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: MyToken
+2025-08-24 15:41:58,694 - contract_discovery.main_discovery - INFO -   Found contract: AccessControlDefaultAdminRules
+2025-08-24 15:41:58,702 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessControlDefaultAdminRules
+2025-08-24 15:41:58,703 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessControlDefaultAdminRules
+2025-08-24 15:41:58,812 - contract_discovery.main_discovery - INFO - Analyzing file 32/696: contracts/access/extensions/AccessControlEnumerable.sol
+2025-08-24 15:41:59,574 - contract_discovery.main_discovery - INFO -   Found contract: AccessControlEnumerable
+2025-08-24 15:41:59,579 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessControlEnumerable
+2025-08-24 15:41:59,579 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessControlEnumerable
+2025-08-24 15:41:59,680 - contract_discovery.main_discovery - INFO - Analyzing file 33/696: contracts/access/extensions/IAccessControlDefaultAdminRules.sol
+2025-08-24 15:42:00,594 - contract_discovery.main_discovery - INFO -   Found contract: IAccessControlDefaultAdminRules
+2025-08-24 15:42:00,605 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IAccessControlDefaultAdminRules
+2025-08-24 15:42:00,605 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IAccessControlDefaultAdminRules
+2025-08-24 15:42:00,712 - contract_discovery.main_discovery - INFO - Analyzing file 34/696: contracts/access/extensions/IAccessControlEnumerable.sol
+2025-08-24 15:42:01,247 - contract_discovery.main_discovery - INFO -   Found contract: IAccessControlEnumerable
+2025-08-24 15:42:01,249 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IAccessControlEnumerable
+2025-08-24 15:42:01,250 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IAccessControlEnumerable
+2025-08-24 15:42:01,363 - contract_discovery.main_discovery - INFO - Analyzing file 35/696: contracts/access/manager
+2025-08-24 15:42:02,086 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/access/manager
+2025-08-24 15:42:02,086 - contract_discovery.main_discovery - INFO - Analyzing file 36/696: contracts/access/manager/AccessManaged.sol
+2025-08-24 15:42:03,291 - contract_discovery.main_discovery - INFO -   Found contract: like
+2025-08-24 15:42:03,292 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: like
+2025-08-24 15:42:03,293 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: like
+2025-08-24 15:42:03,293 - contract_discovery.main_discovery - INFO -   Found contract: AccessManaged
+2025-08-24 15:42:03,296 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessManaged
+2025-08-24 15:42:03,296 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessManaged
+2025-08-24 15:42:03,412 - contract_discovery.main_discovery - INFO - Analyzing file 37/696: contracts/access/manager/AccessManager.sol
+2025-08-24 15:42:04,031 - contract_discovery.main_discovery - INFO -   Found contract: AccessManager
+2025-08-24 15:42:04,041 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccessManager
+2025-08-24 15:42:04,041 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccessManager
+2025-08-24 15:42:04,144 - contract_discovery.main_discovery - INFO - Analyzing file 38/696: contracts/access/manager/AuthorityUtils.sol
+2025-08-24 15:42:04,815 - contract_discovery.main_discovery - INFO -   Found contract: AuthorityUtils
+2025-08-24 15:42:04,817 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AuthorityUtils
+2025-08-24 15:42:04,818 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AuthorityUtils
+2025-08-24 15:42:04,927 - contract_discovery.main_discovery - INFO - Analyzing file 39/696: contracts/access/manager/IAccessManaged.sol
+2025-08-24 15:42:05,774 - contract_discovery.main_discovery - INFO -   Found contract: IAccessManaged
+2025-08-24 15:42:05,776 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IAccessManaged
+2025-08-24 15:42:05,777 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IAccessManaged
+2025-08-24 15:42:05,878 - contract_discovery.main_discovery - INFO - Analyzing file 40/696: contracts/access/manager/IAccessManager.sol
+2025-08-24 15:42:06,579 - contract_discovery.main_discovery - INFO -   Found contract: IAccessManager
+2025-08-24 15:42:06,584 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IAccessManager
+2025-08-24 15:42:06,584 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IAccessManager
+2025-08-24 15:42:06,693 - contract_discovery.main_discovery - INFO - Analyzing file 41/696: contracts/access/manager/IAuthority.sol
+2025-08-24 15:42:07,312 - contract_discovery.main_discovery - INFO -   Found contract: IAuthority
+2025-08-24 15:42:07,313 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IAuthority
+2025-08-24 15:42:07,314 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IAuthority
+2025-08-24 15:42:07,427 - contract_discovery.main_discovery - INFO - Analyzing file 42/696: contracts/account
+2025-08-24 15:42:08,247 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/account
+2025-08-24 15:42:08,248 - contract_discovery.main_discovery - INFO - Analyzing file 43/696: contracts/account/Account.sol
+2025-08-24 15:42:08,941 - contract_discovery.main_discovery - INFO -   Found contract: Account
+2025-08-24 15:42:08,948 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: Account
+2025-08-24 15:42:08,949 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: Account
+2025-08-24 15:42:09,063 - contract_discovery.main_discovery - INFO - Analyzing file 44/696: contracts/account/README.adoc
+2025-08-24 15:42:09,678 - contract_discovery.main_discovery - INFO - Analyzing file 45/696: contracts/account/extensions
+2025-08-24 15:42:10,333 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/account/extensions
+2025-08-24 15:42:10,334 - contract_discovery.main_discovery - INFO - Analyzing file 46/696: contracts/account/extensions/draft-AccountERC7579.sol
+2025-08-24 15:42:11,173 - contract_discovery.main_discovery - INFO -   Found contract: MyAccountERC7579
+2025-08-24 15:42:11,175 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: MyAccountERC7579
+2025-08-24 15:42:11,175 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: MyAccountERC7579
+2025-08-24 15:42:11,176 - contract_discovery.main_discovery - INFO -   Found contract: AccountERC7579
+2025-08-24 15:42:11,198 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccountERC7579
+2025-08-24 15:42:11,199 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccountERC7579
+2025-08-24 15:42:11,309 - contract_discovery.main_discovery - INFO - Analyzing file 47/696: contracts/account/extensions/draft-AccountERC7579Hooked.sol
+2025-08-24 15:42:12,119 - contract_discovery.main_discovery - INFO -   Found contract: AccountERC7579Hooked
+2025-08-24 15:42:12,126 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: AccountERC7579Hooked
+2025-08-24 15:42:12,126 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: AccountERC7579Hooked
+2025-08-24 15:42:12,241 - contract_discovery.main_discovery - INFO - Analyzing file 48/696: contracts/account/extensions/draft-ERC7821.sol
+2025-08-24 15:42:13,004 - contract_discovery.main_discovery - INFO -   Found contract: ERC7821
+2025-08-24 15:42:13,008 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC7821
+2025-08-24 15:42:13,008 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC7821
+2025-08-24 15:42:13,008 - contract_discovery.main_discovery - INFO -   Found contract: itself
+2025-08-24 15:42:13,009 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: itself
+2025-08-24 15:42:13,009 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: itself
+2025-08-24 15:42:13,124 - contract_discovery.main_discovery - INFO - Analyzing file 49/696: contracts/account/utils
+2025-08-24 15:42:13,962 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/account/utils
+2025-08-24 15:42:13,962 - contract_discovery.main_discovery - INFO - Analyzing file 50/696: contracts/account/utils/EIP7702Utils.sol
+2025-08-24 15:42:14,887 - contract_discovery.main_discovery - INFO -   Found contract: EIP7702Utils
+2025-08-24 15:42:14,889 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: EIP7702Utils
+2025-08-24 15:42:14,889 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: EIP7702Utils
+2025-08-24 15:42:14,991 - contract_discovery.main_discovery - INFO - Analyzing file 51/696: contracts/account/utils/draft-ERC4337Utils.sol
+2025-08-24 15:42:17,265 - contract_discovery.main_discovery - INFO -   Found contract: IEntryPointExtra
+2025-08-24 15:42:17,265 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IEntryPointExtra
+2025-08-24 15:42:17,265 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IEntryPointExtra
+2025-08-24 15:42:17,266 - contract_discovery.main_discovery - INFO -   Found contract: ERC4337Utils
+2025-08-24 15:42:17,273 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC4337Utils
+2025-08-24 15:42:17,273 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC4337Utils
+2025-08-24 15:42:17,389 - contract_discovery.main_discovery - INFO - Analyzing file 52/696: contracts/account/utils/draft-ERC7579Utils.sol
+2025-08-24 15:42:18,695 - contract_discovery.main_discovery - INFO -   Found contract: ERC7579Utils
+2025-08-24 15:42:18,700 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: ERC7579Utils
+2025-08-24 15:42:18,701 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: ERC7579Utils
+2025-08-24 15:42:18,806 - contract_discovery.main_discovery - INFO - Analyzing file 53/696: contracts/finance
+2025-08-24 15:42:19,326 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/finance
+2025-08-24 15:42:19,327 - contract_discovery.main_discovery - INFO - Analyzing file 54/696: contracts/finance/README.adoc
+2025-08-24 15:42:20,031 - contract_discovery.main_discovery - INFO - Analyzing file 55/696: contracts/finance/VestingWallet.sol
+2025-08-24 15:42:20,771 - contract_discovery.main_discovery - INFO -   Found contract: VestingWallet
+2025-08-24 15:42:20,775 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: VestingWallet
+2025-08-24 15:42:20,776 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: VestingWallet
+2025-08-24 15:42:20,890 - contract_discovery.main_discovery - INFO - Analyzing file 56/696: contracts/finance/VestingWalletCliff.sol
+2025-08-24 15:42:21,497 - contract_discovery.main_discovery - INFO -   Found contract: VestingWalletCliff
+2025-08-24 15:42:21,500 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: VestingWalletCliff
+2025-08-24 15:42:21,500 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: VestingWalletCliff
+2025-08-24 15:42:21,605 - contract_discovery.main_discovery - INFO - Analyzing file 57/696: contracts/governance
+2025-08-24 15:42:22,224 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/governance
+2025-08-24 15:42:22,225 - contract_discovery.main_discovery - INFO - Analyzing file 58/696: contracts/governance/Governor.sol
+2025-08-24 15:42:22,728 - contract_discovery.main_discovery - INFO -   Found contract: Governor
+2025-08-24 15:42:22,741 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: Governor
+2025-08-24 15:42:22,742 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: Governor
+2025-08-24 15:42:22,854 - contract_discovery.main_discovery - INFO - Analyzing file 59/696: contracts/governance/IGovernor.sol
+2025-08-24 15:42:23,501 - contract_discovery.main_discovery - INFO -   Found contract: IGovernor
+2025-08-24 15:42:23,508 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: IGovernor
+2025-08-24 15:42:23,509 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: IGovernor
+2025-08-24 15:42:23,621 - contract_discovery.main_discovery - INFO - Analyzing file 60/696: contracts/governance/README.adoc
+2025-08-24 15:42:24,164 - contract_discovery.main_discovery - INFO -   Found contract: README
+2025-08-24 15:42:24,170 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: README
+2025-08-24 15:42:24,171 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: README
+2025-08-24 15:42:24,287 - contract_discovery.main_discovery - INFO - Analyzing file 61/696: contracts/governance/TimelockController.sol
+2025-08-24 15:42:25,039 - contract_discovery.main_discovery - INFO -   Found contract: TimelockController
+2025-08-24 15:42:25,045 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: TimelockController
+2025-08-24 15:42:25,045 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: TimelockController
+2025-08-24 15:42:25,154 - contract_discovery.main_discovery - INFO - Analyzing file 62/696: contracts/governance/extensions
+2025-08-24 15:42:25,862 - contract_discovery.main_discovery - WARNING - Could not get content for file: contracts/governance/extensions
+2025-08-24 15:42:25,863 - contract_discovery.main_discovery - INFO - Analyzing file 63/696: contracts/governance/extensions/GovernorCountingFractional.sol
+2025-08-24 15:42:26,384 - contract_discovery.main_discovery - INFO -   Found contract: GovernorCountingFractional
+2025-08-24 15:42:26,389 - contract_discovery.enhanced_contract_analyzer - INFO - Skipping duplicate contract: GovernorCountingFractional
+2025-08-24 15:42:26,389 - contract_discovery.main_discovery - INFO -   Skipped duplicate contract: GovernorCountingFractional
+2025-08-24 15:42:26,502 - contract_discovery.main_discovery - INFO - Analyzing file 64/696: contracts/governance/extensions/GovernorCountingOverridable.sol
+2025-08-24 15:42:27,061 - contract_discovery.main_discovery - INFO -   Found contract: GovernorCountingOverridable
+2025-08-24 15:42:33,989 - contract_discovery.github_storage - INFO - Stored contract signature: c70bc55d3da36e8141bcf461ae249f69c2b0463fc85874bd6ee597f81f858b41
+2025-08-24 15:42:41,134 - contract_discovery.github_storage - INFO - Stored unique contract: c70bc55d3da36e8141bcf461ae249f69c2b0463fc85874bd6ee597f81f858b41
+2025-08-24 15:42:41,134 - contract_discovery.enhanced_contract_analyzer - INFO - Analyzed and stored unique contract: GovernorCountingOverridable
+2025-08-24 15:42:41,134 - contract_discovery.main_discovery - INFO -   Analyzed unique contract: GovernorCountingOverridable
+2025-08-24 15:42:41,249 - contract_discovery.main_discovery - INFO - Analyzing file 65/696: contracts/governance/extensions/GovernorCountingSimple.sol
+2025-08-24 15:42:41,898 - contract_discovery.main_discovery - INFO -   Found contract: GovernorCountingSimple
+2025-08-24 15:42:47,701 - contract_discovery.github_storage - INFO - Stored contract signature: dc36014ff213872d6f2228b025ab5b8b25b0bc960469291f2c09de375b73627d
+2025-08-24 15:42:54,721 - contract_discovery.github_storage - INFO - Stored unique contract: dc36014ff213872d6f2228b025ab5b8b25b0bc960469291f2c09de375b73627d
+2025-08-24 15:42:54,722 - contract_discovery.enhanced_contract_analyzer - INFO - Analyzed and stored unique contract: GovernorCountingSimple
+2025-08-24 15:42:54,722 - contract_discovery.main_discovery - INFO -   Analyzed unique contract: GovernorCountingSimple
+2025-08-24 15:42:54,828 - contract_discovery.main_discovery - INFO - Analyzing file 66/696: contracts/governance/extensions/GovernorNoncesKeyed.sol
+2025-08-24 15:42:55,648 - contract_discovery.main_discovery - INFO -   Found contract: GovernorNoncesKeyed
+2025-08-24 15:43:02,641 - contract_discovery.github_storage - INFO - Stored contract signature: 0a42ddc5815425184d930106b850613038f0a3035b35c26d5273d12c1a91fd6d
+2025-08-24 15:43:18,141 - contract_discovery.github_storage - INFO - Stored unique contract: 0a42ddc5815425184d930106b850613038f0a3035b35c26d5273d12c1a91fd6d
+2025-08-24 15:43:18,142 - contract_discovery.enhanced_contract_analyzer - INFO - Analyzed and stored unique contract: GovernorNoncesKeyed
+2025-08-24 15:43:18,142 - contract_discovery.main_discovery - INFO -   Analyzed unique contract: GovernorNoncesKeyed
+2025-08-24 15:43:18,251 - contract_discovery.main_discovery - INFO - Analyzing file 67/696: contracts/governance/extensions/GovernorPreventLateQuorum.sol
+2025-08-24 15:43:19,040 - contract_discovery.main_discovery - INFO -   Found contract: GovernorPreventLateQuorum
+2025-08-24 15:43:28,796 - contract_discovery.github_storage - INFO - Stored contract signature: 4a72d32c03df4f644031715aa5f21911155cd1ca55c25880fbac98c2923b96ca
+2025-08-24 15:43:42,149 - contract_discovery.github_storage - INFO - Stored unique contract: 4a72d32c03df4f644031715aa5f21911155cd1ca55c25880fbac98c2923b96ca
+2025-08-24 15:43:42,150 - contract_discovery.enhanced_contract_analyzer - INFO - Analyzed and stored unique contract: GovernorPreventLateQuorum
+2025-08-24 15:43:42,150 - contract_discovery.main_discovery - INFO -   Analyzed unique contract: GovernorPreventLateQuorum
+2025-08-24 15:43:42,260 - contract_discovery.main_discovery - INFO - Analyzing file 68/696: contracts/governance/extensions/GovernorProposalGuardian.sol
+2025-08-24 15:43:43,157 - contract_discovery.main_discovery - INFO -   Found contract: GovernorProposalGuardian
+2025-08-24 15:43:53,886 - contract_discovery.github_storage - INFO - Stored contract signature: 8fbdc0964c1a792e389928363e25411502e578fc194699dc9c617cf3afdfe0b4
+2025-08-24 15:44:09,759 - contract_discovery.github_storage - INFO - Stored unique contract: 8fbdc0964c1a792e389928363e25411502e578fc194699dc9c617cf3afdfe0b4
+2025-08-24 15:44:09,759 - contract_discovery.enhanced_contract_analyzer - INFO - Analyzed and stored unique contract: GovernorProposalGuardian
+2025-08-24 15:44:09,760 - contract_discovery.main_discovery - INFO -   Analyzed unique contract: GovernorProposalGuardian
+2025-08-24 15:44:09,869 - contract_discovery.main_discovery - INFO - Analyzing file 69/696: contracts/governance/extensions/GovernorSequentialProposalId.sol
+2025-08-24 15:44:10,497 - contract_discovery.main_discovery - INFO -   Found contract: GovernorSequentialProposalId
+2025-08-24 15:44:24,301 - contract_discovery.github_storage - INFO - Stored contract signature: 6f7f3774a42883ec500e55cf130790089009ac580505db10d9c5b0c7d0fa02ca
+2025-08-24 15:44:38,223 - contract_discovery.github_storage - INFO - Stored unique contract: 6f7f3774a42883ec500e55cf130790089009ac580505db10d9c5b0c7d0fa02ca
+2025-08-24 15:44:38,223 - contract_discovery.enhanced_contract_analyzer - INFO - Analyzed and stored unique contract: GovernorSequentialProposalId
+2025-08-24 15:44:38,223 - contract_discovery.main_discovery - INFO -   Analyzed unique contract: GovernorSequentialProposalId
+2025-08-24 15:44:38,336 - contract_discovery.main_discovery - INFO - Analyzing file 70/696: contracts/governance/extensions/GovernorSettings.sol
+2025-08-24 15:44:39,234 - contract_discovery.main_discovery - INFO -   Found contract: GovernorSettings

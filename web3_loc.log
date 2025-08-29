@@ -1,0 +1,95 @@
+2025-08-27 21:44:09,879 - contract_discovery.enhanced_blockchain_client - INFO - Initializing clients for chains: ['ethereum', 'base']
+2025-08-27 21:44:09,879 - contract_discovery.enhanced_blockchain_client - INFO - Initialized ethereum client (Chain ID: 1)
+2025-08-27 21:44:15,668 - contract_discovery.enhanced_blockchain_client - INFO - Initialized base client (Chain ID: 8453)
+2025-08-27 21:44:36,546 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from ethereum...
+2025-08-27 21:44:36,547 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from ethereum (limit: 2)
+2025-08-27 21:44:36,852 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: Unknown error
+2025-08-27 21:44:36,911 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: NOTOK
+2025-08-27 21:44:36,911 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from ethereum
+2025-08-27 21:44:36,912 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from ethereum
+2025-08-27 21:44:36,913 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from base...
+2025-08-27 21:44:36,913 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from base (limit: 2)
+2025-08-27 21:44:37,176 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: Unknown error
+2025-08-27 21:44:37,250 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: NOTOK
+2025-08-27 21:44:37,251 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from base
+2025-08-27 21:44:37,251 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from base
+2025-08-27 21:44:37,251 - contract_discovery.enhanced_blockchain_client - INFO - Total unique contracts collected: 0
+2025-08-27 21:44:37,295 - contract_discovery.contract_database - INFO - Database initialized successfully
+2025-08-27 21:44:37,297 - main - INFO - Initializing Web3.LOC system...
+2025-08-27 21:44:37,297 - contract_discovery.enhanced_blockchain_client - INFO - Initializing clients for chains: ['ethereum', 'base']
+2025-08-27 21:44:37,297 - contract_discovery.enhanced_blockchain_client - INFO - Initialized ethereum client (Chain ID: 1)
+2025-08-27 21:44:37,546 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: NOTOK
+2025-08-27 21:44:37,555 - contract_discovery.enhanced_blockchain_client - INFO - Initialized base client (Chain ID: 8453)
+2025-08-27 21:44:37,701 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: NOTOK
+2025-08-27 21:44:37,715 - main - INFO - Web3.LOC system initialized successfully
+2025-08-27 21:44:37,716 - main - INFO - Connected to 0 blockchain clients: 
+2025-08-27 21:44:37,716 - main - INFO - Database contains 0 contracts
+2025-08-27 21:44:37,716 - main - INFO - Starting contract discovery: 2 contracts per chain
+2025-08-27 21:44:37,716 - contract_discovery.enhanced_blockchain_client - INFO - Total unique contracts collected: 0
+2025-08-27 21:44:37,716 - main - WARNING - No contracts discovered
+2025-08-27 21:44:37,717 - main - INFO - Web3.LOC system cleaned up
+2025-08-27 22:06:38,000 - contract_discovery.enhanced_blockchain_client - INFO - Initializing clients for chains: ['ethereum', 'base']
+2025-08-27 22:06:38,000 - contract_discovery.enhanced_blockchain_client - INFO - Initialized ethereum client (Chain ID: 1)
+2025-08-27 22:06:44,137 - contract_discovery.enhanced_blockchain_client - INFO - Initialized base client (Chain ID: 8453)
+2025-08-27 22:07:14,339 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from ethereum...
+2025-08-27 22:07:14,339 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from ethereum (limit: 2)
+2025-08-27 22:07:14,680 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: Unknown error
+2025-08-27 22:07:14,741 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: NOTOK
+2025-08-27 22:07:14,741 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from ethereum
+2025-08-27 22:07:14,741 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from ethereum
+2025-08-27 22:07:14,741 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from base...
+2025-08-27 22:07:14,742 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from base (limit: 2)
+2025-08-27 22:07:15,002 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: Unknown error
+2025-08-27 22:07:15,070 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: NOTOK
+2025-08-27 22:07:15,071 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from base
+2025-08-27 22:07:15,071 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from base
+2025-08-27 22:07:15,071 - contract_discovery.enhanced_blockchain_client - INFO - Total unique contracts collected: 0
+2025-08-27 22:07:15,077 - contract_discovery.contract_database - INFO - Database initialized successfully
+2025-08-27 22:07:15,077 - main - INFO - Initializing Web3.LOC system...
+2025-08-27 22:07:15,078 - contract_discovery.enhanced_blockchain_client - INFO - Initializing clients for chains: ['ethereum', 'base']
+2025-08-27 22:07:15,078 - contract_discovery.enhanced_blockchain_client - INFO - Initialized ethereum client (Chain ID: 1)
+2025-08-27 22:07:15,302 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: NOTOK
+2025-08-27 22:07:15,309 - contract_discovery.enhanced_blockchain_client - INFO - Initialized base client (Chain ID: 8453)
+2025-08-27 22:07:15,468 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: NOTOK
+2025-08-27 22:07:15,476 - main - INFO - Web3.LOC system initialized successfully
+2025-08-27 22:07:15,476 - main - INFO - Connected to 0 blockchain clients: 
+2025-08-27 22:07:15,476 - main - INFO - Database contains 0 contracts
+2025-08-27 22:07:15,476 - main - INFO - Starting contract discovery: 2 contracts per chain
+2025-08-27 22:07:15,476 - contract_discovery.enhanced_blockchain_client - INFO - Total unique contracts collected: 0
+2025-08-27 22:07:15,476 - main - WARNING - No contracts discovered
+2025-08-27 22:07:15,477 - main - INFO - Web3.LOC system cleaned up
+2025-08-27 22:21:59,382 - contract_discovery.enhanced_blockchain_client - INFO - Initializing clients for chains: ['ethereum', 'base']
+2025-08-27 22:21:59,382 - contract_discovery.enhanced_blockchain_client - INFO - Initialized ethereum client (Chain ID: 1)
+2025-08-27 22:22:29,650 - contract_discovery.enhanced_blockchain_client - ERROR - Request error for ethereum: 
+2025-08-27 22:22:29,663 - contract_discovery.enhanced_blockchain_client - INFO - Initialized base client (Chain ID: 8453)
+2025-08-27 22:22:50,527 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from base...
+2025-08-27 22:22:50,527 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from base (limit: 2)
+2025-08-27 22:22:50,786 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: Unknown error
+2025-08-27 22:22:50,856 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: NOTOK
+2025-08-27 22:22:50,857 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from base
+2025-08-27 22:22:50,857 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from base
+2025-08-27 22:22:50,858 - contract_discovery.enhanced_blockchain_client - INFO - Total unique contracts collected: 0
+2025-08-27 22:22:50,863 - contract_discovery.contract_database - INFO - Database initialized successfully
+2025-08-27 22:22:50,864 - main - INFO - Initializing Web3.LOC system...
+2025-08-27 22:22:50,865 - contract_discovery.enhanced_blockchain_client - INFO - Initializing clients for chains: ['ethereum', 'base']
+2025-08-27 22:22:50,865 - contract_discovery.enhanced_blockchain_client - INFO - Initialized ethereum client (Chain ID: 1)
+2025-08-27 22:22:57,020 - contract_discovery.enhanced_blockchain_client - INFO - Initialized base client (Chain ID: 8453)
+2025-08-27 22:23:27,141 - main - INFO - Web3.LOC system initialized successfully
+2025-08-27 22:23:27,141 - main - INFO - Connected to 2 blockchain clients: ethereum, base
+2025-08-27 22:23:27,141 - main - INFO - Database contains 0 contracts
+2025-08-27 22:23:27,141 - main - INFO - Starting contract discovery: 2 contracts per chain
+2025-08-27 22:23:27,141 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from ethereum...
+2025-08-27 22:23:27,141 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from ethereum (limit: 2)
+2025-08-27 22:23:27,434 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: Unknown error
+2025-08-27 22:23:27,491 - contract_discovery.enhanced_blockchain_client - WARNING - API error for ethereum: NOTOK
+2025-08-27 22:23:27,492 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from ethereum
+2025-08-27 22:23:27,492 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from ethereum
+2025-08-27 22:23:27,493 - contract_discovery.enhanced_blockchain_client - INFO - Fetching contracts from base...
+2025-08-27 22:23:27,493 - contract_discovery.enhanced_blockchain_client - INFO - Fetching verified contracts from base (limit: 2)
+2025-08-27 22:23:27,710 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: Unknown error
+2025-08-27 22:23:27,780 - contract_discovery.enhanced_blockchain_client - WARNING - API error for base: NOTOK
+2025-08-27 22:23:27,781 - contract_discovery.enhanced_blockchain_client - INFO - Retrieved 0 unique verified contracts from base
+2025-08-27 22:23:27,781 - contract_discovery.enhanced_blockchain_client - INFO - Added 0 unique contracts from base
+2025-08-27 22:23:27,782 - contract_discovery.enhanced_blockchain_client - INFO - Total unique contracts collected: 0
+2025-08-27 22:23:27,782 - main - WARNING - No contracts discovered
+2025-08-27 22:23:27,784 - main - INFO - Web3.LOC system cleaned up

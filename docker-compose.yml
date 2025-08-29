@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web3-loc:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      # Required API keys
+      - ETHERSCAN_API_KEY=${ETHERSCAN_API_KEY}
+      - BASESCAN_API_KEY=${BASESCAN_API_KEY}
+      
+      # Optional GitHub storage (for live deployment)
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - GITHUB_REPO=${GITHUB_REPO}
+      
+      # Optional configuration
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    
+    volumes:
+      # Persist local database
+      - ./data:/app/data
+      - ./exports:/app/exports
+      - ./logs:/app/logs
+    
+    restart: unless-stopped
+    
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  data:
+  exports:
+  logs:

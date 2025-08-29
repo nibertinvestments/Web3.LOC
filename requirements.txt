@@ -1,0 +1,39 @@
+# Web3.LOC - Smart Contract Discovery Platform Requirements
+
+# Core blockchain and async dependencies
+requests>=2.31.0
+web3>=6.15.1
+python-dotenv>=1.0.0
+aiohttp>=3.9.0
+asyncio-throttle>=1.0.2
+
+# Web interface and data visualization
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Development and testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Utility libraries
+Jinja2>=3.1.0
+colorama>=0.4.6
+tqdm>=4.66.0
+click>=8.1.0
+PyYAML>=6.0
+jsonschema>=4.19.0
+markdown>=3.5.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Optional: Code analysis (commented out for now)
+# solc-select>=1.0.4
+# py-solc-x>=2.0.2
+# crytic-compile>=0.3.6
+# slither-analyzer>=0.10.0
+
+# Optional: Git integration
+# PyGithub>=1.59.0
+# gitpython>=3.1.0
