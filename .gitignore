@@ -5,3 +5,15 @@ __pycache__/
 data/
 reports/
 .env
+
+# Log files
+*.log
+web3_loc*.log
+
+# Backup files
+*_OLD.md
+*_BACKUP.*
+
+# Temporary files
+*.tmp
+*.temp
